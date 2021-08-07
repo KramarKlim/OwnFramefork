@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EE7B5E9726BEA91F00556F62 /* OwnFramefork.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7B5E9526BEA91F00556F62 /* OwnFramefork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE7B5E9F26BEA93700556F62 /* AddingMatchine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B5E9E26BEA93700556F62 /* AddingMatchine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE7B5E9226BEA91F00556F62 /* OwnFramefork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OwnFramefork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7B5E9526BEA91F00556F62 /* OwnFramefork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OwnFramefork.h; sourceTree = "<group>"; };
 		EE7B5E9626BEA91F00556F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE7B5E9E26BEA93700556F62 /* AddingMatchine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingMatchine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				EE7B5E9526BEA91F00556F62 /* OwnFramefork.h */,
+				EE7B5E9E26BEA93700556F62 /* AddingMatchine.swift */,
 				EE7B5E9626BEA91F00556F62 /* Info.plist */,
 			);
 			path = OwnFramefork;
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					EE7B5E9126BEA91F00556F62 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7B5E9F26BEA93700556F62 /* AddingMatchine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		EE7B5E9B26BEA91F00556F62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cnecie.OwnFramefork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		EE7B5E9C26BEA91F00556F62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
